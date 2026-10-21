@@ -1,0 +1,18 @@
+Write a complete, single-file PHP script named test-webapp.php that implements a web application called "Kara David's Wish Note".
+
+Requirements:
+1. Connect to a local MySQL/MariaDB database named birthday_wishnote using user root with no password.
+2. Automatically create the database birthday_wishnote if it does not exist.
+3. Automatically create the table main_corrupt_politicians if it does not exist, with columns:
+   - id (INT AUTO_INCREMENT PRIMARY KEY)
+   - FirstName (VARCHAR 30)
+   - LastName (VARCHAR 30)
+   - GovPosition (VARCHAR 20)
+   - Location (VARCHAR 40)
+4. Display a responsive HTML web form with four input text fields in this exact order: First Name, Last Name, Government Position, and Location.
+5. Include a "Send Wish Note" submit button that changes color when hovered over.
+6. When "Send Wish Note" is clicked, display a confirmation modal popping up showing the values entered in all four fields, with "Cancel" and "Confirm & Send" buttons.
+7. If "Cancel" is clicked, dismiss the modal without submitting.
+8. If "Confirm & Send" is clicked, submit the form via POST.
+9. Insert the submitted First Name, Last Name, and Government Position into the main_corrupt_politicians table using prepared statements.
+10. Upon successful insertion, display the feedback message: "Success! The wish note has been sent."
